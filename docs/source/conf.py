@@ -15,8 +15,7 @@ release = '3.1.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
+    'sphinx.ext.autosectionlabel',
         ]
 
 templates_path = ['_templates']

@@ -23,6 +23,7 @@ Functions
         Save a screenshot to the folder "images"
 
 .. code-block:: python
+
    from cvbot.io import save_img
    from cvbot.capture import screenshot
 

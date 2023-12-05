@@ -26,6 +26,7 @@ Window class
          - Change window position to the top-left corner of the screen
 
 .. code-block:: python
+
    from cvbot import windows
 
    window = windows.get_window("chrome")

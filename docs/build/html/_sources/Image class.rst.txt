@@ -19,6 +19,7 @@ Class functions
        - Showing an image of a screen region
 
 .. code-block:: python
+
    from cvbot.capture import get_reigon
 
    img = get_region((100, 100, 300, 300))

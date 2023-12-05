@@ -13,6 +13,7 @@ Contents
 
 .. toctree::
 
+   generated/cvbot
    usage
    Image class
    capture the screen

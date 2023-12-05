@@ -20,6 +20,7 @@ Functions
          Simple example
 
 .. code-block:: python
+   
    from cvbot.capture import screenshot
 
    img = screenshot()
