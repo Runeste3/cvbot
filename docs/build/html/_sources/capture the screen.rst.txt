@@ -8,10 +8,6 @@ Take an image of the screen, either the whole screen or part of it, functions in
 Functions
 ---------
 
-- screenshot()
-
-  Take a full screenshot
-
 .. py:function:: capture.screenshot(grey=False)
 
         Return an Image of the whole screen
@@ -19,11 +15,11 @@ Functions
         :param grey: default 'False' returns grey image of the screen if True
         :type grey: bool
 
-- Examples:
+        - Examples:
 
-  Simple example
+         Simple example
 
-.. code-block:: Python
+.. code-block:: python
    from cvbot.capture import screenshot
 
    img = screenshot()

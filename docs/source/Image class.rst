@@ -6,10 +6,6 @@ Image class
 Class functions
 ---------------
 
-- image.show()
-
-  Displays the image in a separate window
-
 .. py:function:: image.show(pos=None)
 
    Shows the image on a separate window
@@ -18,11 +14,11 @@ Class functions
    :type pos: tuple(int, int) or None
 
    
-Examples:
+   Examples:
 
- - Showing an image of a screen region
+       - Showing an image of a screen region
 
-.. code-block:: Python
+.. code-block:: python
    from cvbot.capture import get_reigon
 
    img = get_region((100, 100, 300, 300))

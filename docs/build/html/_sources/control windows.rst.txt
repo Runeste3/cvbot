@@ -12,18 +12,20 @@ Window class
 
 **class functions**:
 
-- reposition the window
-
-Change window position top-left corner to (x, y)
-
 .. py:function:: window.repos(x:int, y:int)
+
    Change position of window to (x, y) coordinates on screen
 
+   :param x: x coordinate to move the window to
+   :param y: y coordinate to move the window to
+   :type x: int
+   :type y: int
 
-Examples:
- - Change window position to the top-left corner of the screen
 
-.. code-block:: Python
+        Examples:
+         - Change window position to the top-left corner of the screen
+
+.. code-block:: python
    from cvbot import windows
 
    window = windows.get_window("chrome")

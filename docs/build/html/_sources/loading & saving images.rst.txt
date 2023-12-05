@@ -8,10 +8,6 @@ This module is used for input/output of images(loading and saving).
 Functions
 ---------
 
-- save_image(img, pth)
-
-  Given an image and a local path, write that image to the given path.
-
 .. py:function:: save_img(img=Image, pth=str)
 
         Write given image "img" to the local path "pth"
@@ -21,11 +17,12 @@ Functions
         :type img: Image
         :type tph: str 
 
-- Examples
+
+        - Examples
 
         Save a screenshot to the folder "images"
 
-.. code-block:: Python
+.. code-block:: python
    from cvbot.io import save_img
    from cvbot.capture import screenshot
 
