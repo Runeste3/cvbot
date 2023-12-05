@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Usage &#8212; CVBot 3.1.0 documentation</title>
+    <title>Capture the screen &#8212; CVBot 3.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
     <script src="_static/documentation_options.js?v=dd1205ac"></script>
@@ -13,8 +13,8 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Image class" href="Image%20class.html" />
-    <link rel="prev" title="Welcome to CVBot’s documentation!" href="index.html" />
+    <link rel="next" title="Loading and saving images from disk" href="loading%20%26%20saving%20images.html" />
+    <link rel="prev" title="Image class" href="Image%20class.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -31,14 +31,33 @@
 
           <div class="body" role="main">
             
-  <section id="usage">
-<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
-<section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
-<p>Once you’ve Python installed simply run this in command prompt to:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip<span class="w"> </span>install<span class="w"> </span>cvbot
-</pre></div>
-</div>
+  <section id="capture-the-screen">
+<h1>Capture the screen<a class="headerlink" href="#capture-the-screen" title="Link to this heading">¶</a></h1>
+<p><strong>cvbot.capture</strong></p>
+<p>Take an image of the screen, either the whole screen or part of it, functions in this module will return an image of class ‘Image’.</p>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<ul>
+<li><p>screenshot()</p>
+<p>Take a full screenshot</p>
+</li>
+</ul>
+<dl class="py function">
+<dt class="sig sig-object py" id="capture.screenshot">
+<span class="sig-prename descclassname"><span class="pre">capture.</span></span><span class="sig-name descname"><span class="pre">screenshot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">grey</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#capture.screenshot" title="Link to this definition">¶</a></dt>
+<dd><p>Return an Image of the whole screen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>grey</strong> (<em>bool</em>) – default ‘False’ returns grey image of the screen if True</p>
+</dd>
+</dl>
+</dd></dl>
+
+<ul>
+<li><p>Examples:</p>
+<p>Simple example</p>
+</li>
+</ul>
 </section>
 </section>
 
@@ -60,12 +79,15 @@
 
 <h3>Navigation</h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Image%20class.html">Image class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Capture the screen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#capture.screenshot"><code class="docutils literal notranslate"><span class="pre">capture.screenshot()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Image%20class.html">Image class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="capture%20the%20screen.html">Capture the screen</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="loading%20%26%20saving%20images.html">Loading and saving images from disk</a></li>
 <li class="toctree-l1"><a class="reference internal" href="control%20windows.html">Windows control and management</a></li>
 </ul>
@@ -74,8 +96,8 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to CVBot’s documentation!</a></li>
-      <li>Next: <a href="Image%20class.html" title="next chapter">Image class</a></li>
+      <li>Previous: <a href="Image%20class.html" title="previous chapter">Image class</a></li>
+      <li>Next: <a href="loading%20%26%20saving%20images.html" title="next chapter">Loading and saving images from disk</a></li>
   </ul></li>
 </ul>
 </div>
@@ -109,7 +131,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
       
       |
-      <a href="_sources/usage.rst.txt"
+      <a href="_sources/capture the screen.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

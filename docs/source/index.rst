@@ -14,7 +14,11 @@ Contents
 .. toctree::
 
    usage
-   api
+   Image class
+   capture the screen
+   loading & saving images
+   control windows
+
 
 
 
