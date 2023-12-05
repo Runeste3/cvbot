@@ -9,7 +9,7 @@ Welcome to CVBot's documentation!
 **CVBot** is an image recognition Python package for visual based automation with mouse and keyboard support. It's a computer vision tool based on OpenCV, numpy and PyTorch, used for processing images, object detection, task automation.
 
 Contents
---------
+========
 
 .. toctree::
 
