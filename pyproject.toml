@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cvbot"
+version = "3.1.0"
+authors = [
+	{ name = "Hisham Moe", email="runeste2018@gmail.com" },
+]
+description = "An assistant made to help and make automating computer vision tasks easy"
+readme = "README.md"
+requires-python = ">=3.9"
