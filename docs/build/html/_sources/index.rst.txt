@@ -11,8 +11,6 @@ Welcome to CVBot's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   :caption: Usage:
-   :caption: API:
 
 
 
