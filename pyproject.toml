@@ -8,6 +8,6 @@ version = "3.1.0"
 authors = [
 	{ name = "Hisham Moe", email="runeste2018@gmail.com" },
 ]
-description = "An assistant made to help and make automating computer vision tasks easy"
-readme = "README.md"
+description = "Visual based desktop automation toolbox. Supports mouse & keyboard control"
+readme = "README.rst"
 requires-python = ">=3.9"
