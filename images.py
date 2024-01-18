@@ -116,23 +116,37 @@ class Image:
 
         return Image(nimg)
 
-    def draw_rects(self, boxes, pos=False, size=None):
+    def draw_rects(self, boxes, rects=False, pos=False, size=None):
         """
-        self, list of ((int, int), (int, int)), bool, (int, int)|None -> Image
-        Given list of boxes draw them in a new image(copy of self) and return it
+        self, list of ((int, int), (int, int)), bool, bool, (int, int)|None -> Image
+        Given list of boxes draw them in a new image(copy of self) and return it,
+        if rects is True boxes will be treated as rects instead(first two ints 
+        represent the top-left corner and the last two ints represent the
+        width and height of the rectangle),
         if pos is True boxes will be treated as a list of positions and
         the arguement 'size' must a (<width>int, <height)int) tuple
         """
         if pos and (size is None):
             print("Unable to draw rectangles, arguement 'size' must be given when pos is True")
             return self
-        elif pos:
+        elif pos and rects:
+            print("rects and pos arguements can't be both True")
+            return self
+        elif pos or rects:
             lpos = boxes
             boxes = []
-            w, h = size 
-            for pos in lpos:
-                box = ((pos[0] - (w//2), pos[1] - (h//2)),
-                       (pos[0] + (w//2), pos[1] + (h//2)))
+
+            if pos:
+                w, h = size 
+
+            for ps in lpos:
+                if pos:
+                    box = ((ps[0] - (w//2), ps[1] - (h//2)),
+                           (ps[0] + (w//2), ps[1] + (h//2)))
+                else:
+                    box = (ps[:2],
+                           (ps[0] + ps[2], ps[1] + ps[3]))
+
                 boxes.append(box)
 
         nimg = self.copy()

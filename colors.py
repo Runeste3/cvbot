@@ -83,10 +83,12 @@ def threshold(img, clr, variation=0):
 
     return Image(dst)
 
-def locations(img, clr, variation=0, min_area=0, min_ht=0, min_wd=0):
+def clr_find(img, clr, variation=0, min_area=0, min_ht=0, min_wd=0, relative=False):
     """
-    Image, int | tuple(int, int, int, int), int, int -> list(tuple(int, int, int, int))
-    Return the locations of where the given color is concentrated as a region/box(x, y, w, h)
+    Image, int | tuple(int, int, int, int), int, int, bool -> list(tuple(int, int, int, int))
+    Return the locations of where the given color is concentrated as a region/box(x, y, w, h),
+    if relative is a region return the position relative to the whole screen instead of
+    just the given image
     """
     ln = 0 if len(img.img.shape) < 3 else img.img.shape[2]
 
@@ -106,5 +108,11 @@ def locations(img, clr, variation=0, min_area=0, min_ht=0, min_wd=0):
 
     if min_wd:
         cnts = list(filter(lambda x: x[2] > min_wd, cnts))
+
+    if relative:
+        for i in range(len(cnts)):
+            cnt = cnts[i]
+            cnts[i] = (relative[0] + cnt[0], relative[1] + cnt[1],
+                       cnt[2], cnt[3])
 
     return cnts
